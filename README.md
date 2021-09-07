@@ -12,6 +12,11 @@ This project was developed using the following technologies:
 
 <br>
 
+## 🚀 Link
+https://6137f6b0bff3f800d1a19dd2--upbeat-noyce-16548d.netlify.app/
+ 
+ <br>
+
 ## 🔖 Layout
 
 You can view the project layout through the links below:
