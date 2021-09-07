@@ -1,0 +1,399 @@
+/*javaScript */
+
+.js [data-slide] {
+  position: relative;
+}
+.js [data-slide] > * {
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+}
+.js [data-slide] > .active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms;
+  z-index: 1;
+}
+
+.js [data-slide-nav] {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.js [data-slide-nav] > button {
+  display: inline-block;
+  width: 12px;
+  margin: 4px;
+  height: 12px;
+  border: none;
+  padding: 0px;
+  border-radius: 6px;
+  background: #1d1d1d;
+  text-indent: -100px;
+  overflow: hidden;
+}
+.js [data-slide-nav] > button.active {
+  background: #fec454;
+}
+
+.js [data-anime] {
+  opacity: 0;
+}
+.js .anime {
+  opacity: 1;
+  transform: none;
+  transition: transform .8s, opacity .8s;
+}
+
+/* 7 CSS personalizado dependendo da animação desejada */
+.js .fadeInDown {
+  transform: translate3d(0,-20px,0);
+}
+.js .fadeInUp {
+  transform: translate3d(0,20px,0);
+}
+.js .fadeInRight {
+  transform: translate3d(20px,0,0);
+}
+.js .fadeInLeft {
+  transform: translate3d(-20px,0,0);
+}
+/*javaScript */
+
+/*global*/
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.buttom{
+  color: #fec63e;
+  border: 3px solid #fec63e;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.buttom-primary:hover{
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.buttom-secondary:hover{
+  color: #000;
+  border: 3px solid #000;
+}
+
+.subTitle{
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 30px;  
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subTitle-primary{
+  color: #000;
+}
+
+.subTitle-secondary{
+  color: #fec63e;
+}
+
+.subTitle::after{
+  background: #000;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 10px auto;
+  width: 60px;
+}
+
+/*
+
+/* header */
+header{
+  background: #fec63e;
+  box-shadow: 0 1px 3px #000;
+  padding: 20px 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.header-menu{
+  text-align: right;
+}
+
+.header-menu ul li{
+  display: inline-block;
+  margin: 20px 0px 0px 20px;
+}
+
+.header-menu ul li a{
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.header-menu ul li a.active{
+  color: #fff;
+}
+
+.header-menu ul li a:hover{
+  color: #fff;
+}
+
+/* Introdução */
+.introduction-home{
+  background: url("../img//bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+  margin-top: 96px;
+  padding-top: 80px;
+  text-align: center;
+  height: 380px;
+  width: 100%;
+}
+
+.introduction-home h1{
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.quote{
+  max-width: 400px;
+  margin: 0 auto 40px auto;
+}
+
+.quote p{
+  color: #fff;
+  font-style: italic;
+}
+
+.quote p::before, .quote p::after{
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 10px auto;
+  width: 60px;
+}
+
+.quote cite{
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .1em;
+}
+
+/* Produtos */
+.products{
+  padding: 60px 0;
+}
+
+.products-list li{
+  background: #fec63e;
+  text-align: center;
+}
+
+.products-list li img{
+  margin: 0 auto;
+}
+
+.products-list-icon{
+  background: #000;
+}
+
+.products-list h3{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.products-list h3::after{
+  background: #000;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 2px auto;
+  width: 60px;
+}
+
+.products-list li p{
+  padding: 20px;
+}
+
+.cta{
+  clear: both;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.cta p{
+ margin-bottom: 20px;
+}
+
+/* portifolio */
+
+.portifolio{
+  background: #000;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.portifolio .subTitle::after{
+  background: #fec63e;
+}
+
+.portifolio-list li:last-child{
+  margin-top: 20px;
+}
+
+.portifolio p{
+  color: #fff;
+}
+
+/* qualidade */
+
+.quality{
+  padding: 60px 0;
+}
+
+.quality::after{
+  background: url("../img/linhas.svg") center no-repeat;
+  content: "";
+  display: block;
+  height: 83px;
+  position: absolute;
+  top: 209px;
+  right: 162px;
+  width: 634px;
+  z-index: -1;
+}
+
+.quality img{
+  margin: 0 auto;
+}
+
+.quality-list{
+  padding-top: 20px;
+  overflow: auto;
+
+}
+
+.quality-list li{
+  padding: 0 40px;
+  text-align: center;
+}
+
+.quality-list h3{
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.quality-list h3::after{
+  background: #000;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 6px auto;
+  width: 60px;
+}
+
+/* quebra */
+.break{
+  background: url("../img/bg-footer.jpg") center no-repeat;
+  background-size: cover;
+  height: 220px;
+  text-align: center;
+  width: 100%;
+}
+
+.break .quote{
+max-width: 400px;
+padding-top: 40px;
+}
+
+/* footer */
+
+.footer{
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  
+}
+
+.footer h3{
+  color: #fec63e;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.footer h3::after{
+  background: #fec63e;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 10px 0 20px 0;
+  width: 60px;
+}
+
+.footer p{
+  padding-right: 40px;
+}
+
+.footer-contact ul li{
+  font-size: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+
+.footer-social ul li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-social ul li a{
+  display: block;
+  border: 3px solid #fec63e;
+  padding: 10px;
+}
+
+.footer-social ul li a:hover{
+  border: 3px solid #fff;
+}
+
+.copy{
+  background: #fec63e;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}

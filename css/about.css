@@ -1,0 +1,53 @@
+.introduction-about{
+  background: url("../img/bg-sobre.jpg") center no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin-top: 92px;
+  padding-top: 30px;
+  height: 160px;
+  width: 100%;
+}
+
+.introduction-about h1{
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.introduction-about h1::after{
+  background: #fff;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 10px auto;
+  width: 60px;
+}
+
+.mission{
+  padding-top: 60px;
+}
+
+.img-about{
+  padding-top: 40px;
+
+}
+.subTitle-about{
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  line-height: 30px;  
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.subTitle-about::after{
+  background: #000;
+  content: "";
+  display: block;
+  height: 3px;
+  margin: 10px 0;
+  width: 60px;
+}
+
