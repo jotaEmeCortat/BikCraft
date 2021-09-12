@@ -1,5 +1,5 @@
 # BikCraft: Project developed during the Complete Web Design course | [Origamid](https://www.origamid.com/)
-![Projeto Base Foto](https://github.com/jotaEmeCortat/BikCraft/blob/main/img/tamplate.png)
+![Photo Base Project](https://github.com/jotaEmeCortat/BikCraft/blob/main/img/tamplate.png)
 
 <br>
 
