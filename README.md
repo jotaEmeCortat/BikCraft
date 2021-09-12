@@ -25,4 +25,4 @@ You can view the project layout through the links below:
 
 Remembering that you need to have a [Figma](http://figma.com/) account to access it.
 
-<p align="center">Made with 🛸 by jotaEme Cortat</p>
+<p align="center">Made with ![image](https://user-images.githubusercontent.com/78482164/133004126-546ad6d2-9184-48af-84f3-61a4333063fd.png) by jotaEme Cortat</p>
