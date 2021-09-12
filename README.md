@@ -27,4 +27,4 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 
 <p align="center">Made with by jotaEme Cortat 🛸</p>
 
-<p align="center">"just seek knowledge"</p>
+<p align="center">"<i>just seek knowledge</i>"</p>
